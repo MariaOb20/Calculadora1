@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora nuevo</title>
+    <title>Calculadora Oscuro</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #eee;
         }
         .calculator {
             width: 300px;
             margin: 0 auto;
             padding: 20px;
-            border: 1px solid #ccc;
+            border: 1px solid #555;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            background-color: #f5f5f5;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            background-color: #444;
         }
         input[type="text"] {
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
             font-size: 20px;
-            border: 1px solid #ccc;
+            border: 1px solid #555;
             border-radius: 3px;
+            background-color: #555;
+            color: #eee;
         }
         button {
             width: 50px;
@@ -33,11 +37,11 @@
             border: none;
             border-radius: 3px;
             cursor: pointer;
-            background-color: #0074d9;
+            background-color: #666;
             color: #fff;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color: #888;
         }
         #error {
             color: red;
@@ -64,7 +68,7 @@
         <button onclick="addToDisplay('1')">1</button>
         <button onclick="addToDisplay('2')">2</button>
         <button onclick="addToDisplay('3')">3</button>
-        <button onclick="addToDisplay('')">*</button>
+        <button onclick="addToDisplay('*')">*</button>
         <br>
         <button onclick="addToDisplay('0')">0</button>
         <button onclick="addToDisplay('.')">.</button>
